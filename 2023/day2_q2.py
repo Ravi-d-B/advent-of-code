@@ -3,12 +3,12 @@ import re
 
 
 def check_color_power(color_array):
-    max = 0
+    max_amount = 0
     for color in color_array:
         amount = int(color.split(' ')[0])
-        if amount > max:
-            max = amount
-    return max
+        if amount > max_amount:
+            max_amount = amount
+    return max_amount
 
 
 count = 0
